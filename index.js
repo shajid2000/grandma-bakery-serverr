@@ -29,6 +29,45 @@ app.get("/products", (req, res) => {
   });
 });
 
+app.get("/cartProducts", (req, res) => {
+  fs.readFile("./data/cartProduct.json", "utf8", (err, jsonString) => {
+    if (err) {
+      console.log("Error reading file from disk:", err);
+      return;
+    }
+    try {
+      const cartProducts = JSON.parse(jsonString);
+      res.send(cartProducts);
+    } catch (err) {
+      console.log("Error parsing JSON string:", err);
+    }
+  });
+});
+
+app.post("/cartProducts", (req, res) => {
+  const product = req.body;
+  console.log(product);
+
+  fs.readFile("./data/cartProduct.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      const cartProducts = JSON.parse(data);
+      cartProducts.push(product);
+      fs.writeFile(
+        "./data/cartProduct.json",
+        JSON.stringify(cartProducts),
+        (err) => {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log("added");
+          }
+        }
+      );
+    }
+  });
+});
 
 
 app.listen(port, () => {
