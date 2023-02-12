@@ -11,7 +11,20 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Grandma bakery server running!");
+  fs.readFile("./data/products.json", "utf8", (err, jsonString) => {
+    if (err) {
+      console.log("Error reading file from disk:", err);
+      return;
+    }
+    try {
+      const products = JSON.parse(jsonString);
+      res.send(products);
+    } catch (err) {
+      console.log("Error parsing JSON string:", err);
+    }
+  });
+}
+//   res.send("Grandma bakery server running!");
 });
 
 app.get("/products", (req, res) => {
