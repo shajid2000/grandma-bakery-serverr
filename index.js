@@ -69,6 +69,46 @@ app.post("/cartProducts", (req, res) => {
   });
 });
 
+app.get("/cartAllData", (req, res) => {
+  fs.readFile("./data/cartAllData.json", "utf8", (err, jsonString) => {
+    if (err) {
+      console.log("Error reading file from disk:", err);
+      return;
+    }
+    try {
+      const cartAllData = JSON.parse(jsonString);
+      res.send(cartAllData);
+    } catch (err) {
+      console.log("Error parsing JSON string:", err);
+    }
+  });
+});
+
+app.post("/cartAllData", (req, res) => {
+  const product = req.body;
+  console.log(product);
+
+  fs.readFile("./data/cartAllData.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      const cartAllData = JSON.parse(data);
+      cartAllData.push(product);
+      fs.writeFile(
+        "./data/cartAllData.json",
+        JSON.stringify(cartAllData),
+        (err) => {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log("added");
+          }
+        }
+      );
+    }
+  });
+});
+
 app.get("/coupons", (req, res) => {
   fs.readFile("./data/coupons.json", "utf8", (err, jsonString) => {
     if (err) {
