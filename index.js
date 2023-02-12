@@ -70,6 +70,14 @@ app.post("/cartProducts", (req, res) => {
 });
 
 
+
+app.get("/discount", (req, res) => {
+  const discountCode = voucher_codes.generate({
+    length: 8,
+  });
+  res.send(discountCode[0]);
+});
+
 app.listen(port, () => {
   console.log(`Grandma bakery app listening on port ${port}`);
 });
