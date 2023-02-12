@@ -69,7 +69,41 @@ app.post("/cartProducts", (req, res) => {
   });
 });
 
+app.get("/coupons", (req, res) => {
+  fs.readFile("./data/coupons.json", "utf8", (err, jsonString) => {
+    if (err) {
+      console.log("Error reading file from disk:", err);
+      return;
+    }
+    try {
+      const coupons = JSON.parse(jsonString);
+      res.send(coupons);
+    } catch (err) {
+      console.log("Error parsing JSON string:", err);
+    }
+  });
+});
 
+app.post("/coupons", (req, res) => {
+  const coupon = req.body;
+  console.log(coupon);
+
+  fs.readFile("./data/coupons.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      const coupons = JSON.parse(data);
+      coupons.push(coupon);
+      fs.writeFile("./data/coupons.json", JSON.stringify(coupons), (err) => {
+        if (err) {
+          console.log(err);
+        } else {
+          console.log("added");
+        }
+      });
+    }
+  });
+});
 
 app.get("/discount", (req, res) => {
   const discountCode = voucher_codes.generate({
