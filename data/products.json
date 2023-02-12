@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "636a12cb5e620c12bf20ec84",
+    "name": "Colorful Cupcake",
+    "img": "https://i.ibb.co/7NGMq6Y/colorful-cupcakes.jpg",
+    "price": "10",
+    "description": "While the festive colors may have been what caught your eye, I guarantee it’s the sugar cookie-esque taste that will grab your taste buds’ attention. Cupcakes that taste like sugar cookies? Yes indeed!\n\nThese light, buttery, impossibly moist cupcakes star six layers of rainbow colors that bake up into a centerpiece-worthy treat perfect for birthdays, St. Patrick’s Day, and any other ordinary or extraordinary occasion in need of a little color and a whole lot of flavor."
+  },
+  {
+    "_id": "636a12cb5e620c12bf20ec85",
+    "name": "Crunchy Bread",
+    "img": "https://i.ibb.co/dkxLT6v/bread-crunchy.jpg",
+    "price": "20",
+    "description": "Many of us equate the words \"crusty\" and \"artisan,\" assuming that there's only one path to great crusty bread: that followed by the professional baker. These bread masters lovingly tend long-rising doughs, carefully shape each loaf by hand, then bake bread to perfection in a wood-fired oven.\n\nThe result? Beautiful golden-brown loaves, richly flavored, perfectly shaped, and – of course – wonderfully crusty."
+  },
+  {
+    "_id": "636a12cb5e620c12bf20ec86",
+    "name": "Fruit and Cream Cake",
+    "img": "https://i.ibb.co/n6mNdd4/fruit-and-cream-cake.jpg",
+    "price": "150",
+    "description": "Light, dreamy, fruit cake made of crisp meringue, yema filling, with whipped cream, and fruits. "
+  },
+  {
+    "_id": "636a12cb5e620c12bf20ec87",
+    "name": "Iced coffee",
+    "img": "https://i.ibb.co/7CJBt63/iced-coffee.jpg",
+    "price": "50",
+    "description": "Iced coffee at home is straightforward to make too and you can make it based on your own tastes and preferences. Why not order some of our delicious Pelican Rouge coffee and give your first iced coffee a whirl during these hot, summer afternoons."
+  },
+  {
+    "_id": "636a12cb5e620c12bf20ec88",
+    "name": "Simple Donuts",
+    "img": "https://i.ibb.co/x8VS6x9/simple-donuts.jpg",
+    "price": "30",
+    "description": "Homemade doughnuts are a bit of a project, but they’re less work than you might think, and the result is a truly great, hot, crisp doughnut. Once you’ve mastered this basic recipe for a fluffy, yeasted doughnut, you can do pretty much anything you like in terms of glazes, toppings and fillings."
+  },
+  {
+    "_id": "636a12cb5e620c12bf20ec89",
+    "name": "Italian Cappuccino",
+    "img": "https://i.ibb.co/hsspYt4/traditional-italian-cappuccino.jpg",
+    "price": "80",
+    "description": "The is a large diversity in the world of coffee drinks so one may get confused when deciding what to order in a cafe."
+  },
+  {
+    "_id": "636a12cb5e620c12bf20ec8a",
+    "name": "Wedding Floral Cake",
+    "img": "https://i.ibb.co/yXpYHVt/wedding-floral-cake.jpg",
+    "price": "300",
+    "description": "Light, dreamy, fruit cake made of crisp meringue, yema filling, with whipped cream, and flowers. Make your wedding special."
+  },
+  {
+    "_id": "636a12cb5e620c12bf20ec8b",
+    "name": "Chocolate Muffin",
+    "img": "https://i.ibb.co/m0nnywh/chocolate-chip-muffin.jpg",
+    "price": "25",
+    "description": "Calling all chocoholics! These tender chocolate muffins with a double hit of chocolate make a delicious breakfast or after-school snack."
+  },
+  {
+    "_id": "636a12cb5e620c12bf20ec8c",
+    "name": "Chocolate Donuts",
+    "img": "https://i.ibb.co/1rV6Zc8/chocolate-donuts.jpg",
+    "price": "35",
+    "description": "Homemade doughnuts are a bit of a project, but they’re less work than you might think, and the result is a truly great, hot, crisp doughnut. Once you’ve mastered this basic recipe for a fluffy, yeasted doughnut, you can do pretty much anything you like in terms of glazes, toppings and fillings."
+  }
+]
